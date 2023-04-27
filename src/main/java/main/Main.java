@@ -37,4 +37,14 @@ public class Main {
         }
         return y;
     }
+
+    public int findNumMin(double[] arr) {
+        int nMin = 0;
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < arr[nMin]) {
+                nMin = i;
+            }
+        }
+        return nMin;
+    }
 }

@@ -107,4 +107,9 @@ public class MainTest {
     }
 
 
+    @Test
+    public void testFindNumMin() {
+        double[] arr = {1.2, 5.3, -4.1, 19.2, 3.0, -17.7, 2.5, -3.8, 9.9};
+        assertThat(main.findNumMin(arr)).isEqualTo(5);
+    }
 }
